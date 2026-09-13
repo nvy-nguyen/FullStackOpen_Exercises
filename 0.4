@@ -9,6 +9,8 @@ sequenceDiagram
   server->>browser: 302 URL Redirect to header's Location: .../exampleapp/notes
   deactivate server
 
+  Note right on browser: Browser reloads the page
+
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
   activate server
   server->>browser: HTML document
